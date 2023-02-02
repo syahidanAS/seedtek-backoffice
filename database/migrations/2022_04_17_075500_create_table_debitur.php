@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('debitur', function (Blueprint $table) {
             $table->id();
             $table->text('kode_debitur');
-            $table->string('nm_debitur', 30);
+            $table->string('nm_debitur');
             $table->text('alamat');
-            $table->string('email_deb', 30);
-            $table->string('tlp_deb', 13);
+            $table->string('email_deb');
+            $table->string('tlp_deb');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
         });

@@ -7,14 +7,14 @@
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"></head>
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/icon-blue.png') }}">
 <body>
     {{-- LOGIN SECTION --}}
     <section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
       <div class="col-md-8 col-lg-7 col-xl-6">
-        <img src="{{ asset('images/hospital.svg') }}"
+        <img src="{{ asset('images/logo-seedtek.png') }}"
           class="img-fluid" alt="Hospital image">
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
@@ -35,7 +35,7 @@
             </button>
         </div>
         @endif
-        <h5 class="pb-2" style="text-align: center">SISTEM PENGENDALIAN PIUTANG TAK TERTAGIH RS KHUSUS PARU</h5>
+        <h5 class="pb-2" style="text-align: center">SISTEM PENGENDALIAN PIUTANG SEEDTEK</h5>
         <form action="/login" method="POST">
             @csrf
           <!-- Email input -->

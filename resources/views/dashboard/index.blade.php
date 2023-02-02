@@ -18,8 +18,8 @@
 @section('content')
 <div class="sufee-login d-flex align-content-center flex-wrap">
     <div class="container text-center" style="margin-top: 7%; margin-bottom:2%;">
-        <img src="{{ asset('images/logo.png') }}" alt="" style="width: 120px;">
-        <h3 class="mt-2">Sistem Pengendalian Piutang Tak Tertagih Rumah Sakit</h3>
+        <img src="{{ asset('images/logo-seedtek.png') }}" alt="" style="width: 300px;">
+        <h3 class="mt-2">APLIKASI PENGENDALIAN PIUTANG</h3>
         
     </div>
 </div>

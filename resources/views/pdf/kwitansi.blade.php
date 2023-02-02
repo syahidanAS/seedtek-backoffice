@@ -9,9 +9,9 @@
 <body>
 
         {{-- <div class="wrap-content">
-            <div class="kop-surat">
+            <!-- <div class="kop-surat">
                 <img src="{{ asset('images/kop-surat.png') }}" alt="">
-            </div>
+            </div> -->
             <div class="main-content">
                 <h4>KWITANSI PEMBAYARAN</h4>
             </div>
@@ -49,7 +49,7 @@
                     <tr>
                         <td></td>
                         <td></td>
-                        <td style="border-bottom: 1px solid black; padding: 1px 0 0;">di RS Khusus Paru Kabupaten Karawang</td>
+                        <td style="border-bottom: 1px solid black; padding: 1px 0 0;">di Seedtek Technology</td>
                     </tr>
                 </table>
             </div>
@@ -59,17 +59,17 @@
                     <tr>
                       <td>Transfer Ke</td>
                       <td>:</td>
-                      <td>Bank BJB</td>
+                      <td>Bank Mandiri</td>
                     </tr>
                     <tr>
                       <td>Nomor Rekening</td>
                       <td>:</td>
-                      <td>0105461331001</td>
+                      <td>1730003455061</td>
                     </tr>
                     <tr>
                       <td>Atas Nama</td>
                       <td>:</td>
-                      <td>RSK Paru Karawang</td>
+                      <td>Syahidan Arrizaldy Sidik</td>
                     </tr>
                   </table>
                    <div class="parallelogram" style="background-color:#bebebe; margin-left:60px; padding-top:4px; padding-bottom:4px; padding-left:10px; ">
@@ -77,15 +77,15 @@
                 </div>
 
                 </div>
-                <div class="column" style="text-align:center;">
+                <!-- <div class="column" style="text-align:center;">
                     Karawang, {{$tgl_pembayaran}}
                     <br>
-                    Ka. Subbag Keuangan
+                    Owner
                     <br><br><br><br><br>
-                    <u>(WIKE WIDURI, SKM)</u>
+                    <u>(SYAHIDAN A.S)</u>
                     <br>
-                    NIP. 19811120 200501 2 013
-                </div>
+                  
+                </div> -->
 
               </div>
 

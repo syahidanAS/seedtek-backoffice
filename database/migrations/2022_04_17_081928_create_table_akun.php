@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('akun', function (Blueprint $table) {
             $table->id();
-            $table->string('no_akun', 10);
-            $table->string('nama_akun', 25);
+            $table->string('no_akun');
+            $table->string('nama_akun');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
         });

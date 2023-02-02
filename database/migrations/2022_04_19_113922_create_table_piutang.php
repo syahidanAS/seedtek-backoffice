@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('piutang', function (Blueprint $table) {
             $table->id();
-            $table->string('no_invoice', 25);
+            $table->string('no_invoice');
             $table->date('tgl_pengajuan');
             $table->date('tgl_tempo');
             $table->unsignedBigInteger('id_debitur');

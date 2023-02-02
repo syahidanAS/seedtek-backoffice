@@ -42,15 +42,12 @@
     <div class="rangkasurat">
         <table class="table-header" width="100%">
             <tr >
-                <td ><img src="{{ $pic }}" alt="" width="90px"></td>
+                <td ><img src="{{ $pic }}" alt="" width="120px"></td>
                 <td class="tengah">
-                    <h2>PEMERINTAH KABUPATEN KARAWANG</h2>
-                    <h2>DINAS KESEHATAN</h2>
-                    <h2>RUMAH SAKIT KHUSUS PARU</h2>
-                    <p style="font-size: 0.9rem">Jl. Jatisari RT.01/RW.05 Desa Jatisari Kec. Jatisari - Karawang</p>
-                    <p style="font-size: 0.9rem">Email: rsk.parukarawang@gmail.com - Tlp/Fax. 0264-8360156<p>
+                    <h2>SEEDTEK TECHNOLOGY</h2>
+                    <p style="font-size: 0.9rem">Email: seedtektechnology@gmail.com - Tlp. 082246297995<p>
                 </td>
-                <td><img src="{{ $logo }}" alt="" width="110px"></td>
+                <td><img src="{{ $logo }}" alt="" width="120px"></td>
                 <td class="tengah">
             </tr>
         </table>
@@ -135,7 +132,7 @@
                     </tr>
                     @endforeach
                     <tr>
-                        <td colspan="4" rowspan="5" style='width: 61.8683%; vertical-align: top; color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: left;'>Note:<br>Bank Jabar Banten (BJB)<br>Cabang Cikampek<br>No Rek: 0105461331001<br>a/n : RSK PARU KARAWANG</td>
+                        <td colspan="4" rowspan="5" style='width: 61.8683%; vertical-align: top; color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: left;'>Note:<br>Bank Mandiri<br>No Rek: 1730003455061<br>a/n : SYAHIDAN ARRIZALDY SIDIK</td>
                         <td rowspan="5" style="width: 18.2236%; vertical-align: middle;">
                             <div style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: left;'>Sub Total</div>
                             <div style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: left;'>Potongan</div>
@@ -181,7 +178,7 @@
             </table>
         </div>
         @endforeach
-        <p style="margin-left: 65%; margin-bottom:20%; margin-top:40px;">
+        <!-- <p style="margin-left: 58%; margin-bottom:20%; margin-top:40px;">
             <span style="margin-left: 10px;"> Karawang, <?php
 function tgl_indo($tanggal){
     $bulan = array (
@@ -200,21 +197,18 @@ function tgl_indo($tanggal){
     );
     $pecahkan = explode('-', $tanggal);
 
-    // variabel pecahkan 0 = tanggal
-    // variabel pecahkan 1 = bulan
-    // variabel pecahkan 2 = tahun
-
     return $pecahkan[2] . ' ' . $bulan[ (int)$pecahkan[1] ] . ' ' . $pecahkan[0];
 }
 echo tgl_indo(date('Y-m-d'));
-?></span> <br> Ka. Sub Bagian Keuangan
+?> -->
+<!-- </span> <br><span style="color: #fff;">...</span>Owner
         </p>
         <p style="margin-left: 58%; margin-top:5%; text-align:center;">
-            <b><u>WIKE WIDURI, SKM</u></b>
+            <b><u>SYAHIDAN ARRIZALDY S, S.Kom</u></b>
         </p>
         <p style="margin-left: 58%;text-align:center;">
             NIP. 19811120 200501 2 013
         </p>
-    </div>
+    </div> -->
 </body>
 </html>

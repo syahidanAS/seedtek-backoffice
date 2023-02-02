@@ -9,6 +9,7 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\JurnalController;
 use App\Http\Controllers\KelolauserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MutasiController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\PengobatanController;
 use App\Http\Controllers\PiutangController;
@@ -97,3 +98,6 @@ Route::post('/cetak-jurnal',[CetakController::class, 'printJurnalUmum'])->middle
 
 Route::get('/jurnal',[JurnalController::class, 'index'])->middleware('auth');
 Route::post('/jurnal-after-search',[JurnalController::class, 'afterSearch'])->middleware('auth');
+
+
+Route::get('/mutasi',[MutasiController::class, 'index'])->middleware('auth');

@@ -19,12 +19,12 @@ class CetakController extends Controller
         ->where('piutang.id', $request->id)
         ->get();
 
-        $path = base_path('logo-karawang.png');
+        $path = base_path('logo-seedtek.png');
         $type = pathinfo($path, PATHINFO_EXTENSION);
         $data = file_get_contents($path);
         $pic = 'data:image/' . $type . ';base64,' . base64_encode($data);
 
-        $path2 = base_path('logo.png');
+        $path2 = base_path('logo-seedtek.png');
         $type2 = pathinfo($path2, PATHINFO_EXTENSION);
         $data2 = file_get_contents($path2);
         $logo = 'data:image/' . $type2 . ';base64,' . base64_encode($data2);
@@ -73,12 +73,12 @@ class CetakController extends Controller
         $grand_total = (int)$total->sub_total+(int)$materai-(int)$potongan;
 
 
-        $path = base_path('logo-karawang.png');
+        $path = base_path('logo-seedtek.png');
         $type = pathinfo($path, PATHINFO_EXTENSION);
         $data = file_get_contents($path);
         $pic = 'data:image/' . $type . ';base64,' . base64_encode($data);
 
-        $path2 = base_path('logo.png');
+        $path2 = base_path('logo-seedtek.png');
         $type2 = pathinfo($path2, PATHINFO_EXTENSION);
         $data2 = file_get_contents($path2);
         $logo = 'data:image/' . $type2 . ';base64,' . base64_encode($data2);
@@ -99,7 +99,7 @@ class CetakController extends Controller
 
 
 
-        $path = base_path('kop-surat-vertical.png');
+        $path = base_path('kop-surat.png');
         $type = pathinfo($path, PATHINFO_EXTENSION);
         $data = file_get_contents($path);
         $pic = 'data:image/' . $type . ';base64,' . base64_encode($data);

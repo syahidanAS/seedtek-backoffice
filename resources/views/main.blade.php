@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title') - SIP RSKP</title>
+    <title>@yield('title') - SIP SEEDTEK</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/icon-blue.png') }}">
 
 <!-- JavaScript -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -39,14 +40,14 @@
     </style>
 </head>
 <body>
-    <!-- Left Panel -->
+    <!-- Left Panel --> 
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
             <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand mt-4" href="{{url('dashboard')}}"><img class="img-thumbnail" src="{{ asset('images/paru.png') }}" alt="Logo" style="width:65px; margin-bottom:20px;"></a>
+                <a class="navbar-brand mt-4" href="{{url('dashboard')}}"><img class="img-thumbnail" src="{{ asset('images/logo-seedtek.png') }}" alt="Logo" style="width:300px; margin-bottom:20px;"></a>
             </div>
             <div id="main-menu" class="main-menu collapse navbar-collapse ">
                 @if(auth()->user()->role== "admin")
@@ -78,6 +79,9 @@
                     <li>
                         <a href="{{url('pembayaran')}}"> <i class="menu-icon fa fa-money"></i>Pembayaran</a>
                     </li>
+                    <li>
+                        <a href="{{url('mutasi')}}"> <i class="menu-icon fa fa-file-text-o"></i>Mutasi Saldo</a>
+                    </li>
 
                     <h3 class="menu-title">Laporan</h3>
                     <li>
@@ -89,6 +93,7 @@
                     <li>
                         <a href="{{url('/jurnal')}}"> <i class="menu-icon fa fa-file-text-o"></i>Jurnal Umum</a>
                     </li>
+
                 </ul>
                 @else
                 <ul class="nav navbar-nav">

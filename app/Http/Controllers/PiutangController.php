@@ -54,7 +54,7 @@ class PiutangController extends Controller
                 $payload
             );
             $payloadUpdate = [
-                'no_invoice' => 'INV-'.substr(str_repeat(0, $length).$result->id, - $length).'/'.$this->numberToRomanRepresentation(date("m", strtotime($request->input('tgl_pengajuan')))).'/RSKP/'.date("Y", strtotime($request->input('tgl_pengajuan'))),
+                'no_invoice' => 'INV-'.substr(str_repeat(0, $length).$result->id, - $length).'/'.$this->numberToRomanRepresentation(date("m", strtotime($request->input('tgl_pengajuan')))).'/SEEDTEK/'.date("Y", strtotime($request->input('tgl_pengajuan'))),
             ];
             $resultUpdate = PiutangModel::where('id', $result->id)
                         ->update($payloadUpdate);

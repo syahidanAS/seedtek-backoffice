@@ -344,7 +344,7 @@ class PembayaranController extends Controller
         $length = 4;
 
         $payloadUpdate = [
-            'no_pembayaran' => '900/'.substr(str_repeat(0, $length).$result->id, - $length).'/KEU/'.$this->numberToRomanRepresentation(date("m", strtotime($request->input('tanggal_pembayaran')))).'/'.date("Y", strtotime($request->input('tanggal_pembayaran'))),
+            'no_pembayaran' => 'KWT/'.substr(str_repeat(0, $length).$result->id, - $length).'/SEEDTEK/'.$this->numberToRomanRepresentation(date("m", strtotime($request->input('tanggal_pembayaran')))).'/'.date("Y", strtotime($request->input('tanggal_pembayaran'))),
         ];
 
         $resultUpdate = DetailPembayaranModel::where('id', $result->id)

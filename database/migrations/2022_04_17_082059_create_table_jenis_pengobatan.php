@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('jenis_pengobatan', function (Blueprint $table) {
             $table->id();
-            $table->string('kd_layanan', 30);
-            $table->string('nama_pelayanan', 30);
-            $table->string('unit_layanan', 20);
+            $table->string('kd_layanan');
+            $table->string('nama_pelayanan');
+            $table->string('unit_layanan');
             $table->bigInteger('harga');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
